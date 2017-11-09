@@ -1,30 +1,34 @@
 package shapes;
 
-public class Triangle {
+public class Triangle implements Shape {
 	
-	private int length;
-	private int width;
+	private int base;
+	private int height;
+	private int side;
 
-	public Triangle(int length, int width) {
-		this.length = length;
-		this.width = width;
+	public Triangle(int height, int base, int side) {
+		this.height = height;
+		this.base = base;
+		this.side = side;
 	}
 
 
 	public double calculateArea() {
-		// To be written by student
-		return 0.0;
+		// To be written by student\
+		
+		return ((0.5*(this.base))*(this.height));
 	}
 
 
 	public double calculatePerimeter() {
 		// To be written by student
-		return 0.0;
+		
+		return (3*(this.side));
 	}
 
 
 	public String toString() {
-		return "Rectangle Width: " + width + " Length: " + length + " Area: " + this.calculateArea() + " Perimeter: "
-				+ this.calculatePerimeter();
+		return "Triangle Base: " + base + "\nHeight: " + height + "\nSide: " + side + "\nArea: " + this.calculateArea() + "\nPerimeter: "
+				+ this.calculatePerimeter() + "\n\n";
 	}
 }

@@ -1,9 +1,5 @@
 package shapes;
 
-/**
- * @author Mr Levin Created 10/16/2017 Lab 2.1 shapes
- *
- */
 public class Rectangle implements Shape {
 
 	private int length;
@@ -17,18 +13,19 @@ public class Rectangle implements Shape {
 
 	public double calculateArea() {
 		// To be written by student
-		return 0.0;
+		return (this.length)*(this.width);
 	}
 
 
 	public double calculatePerimeter() {
 		// To be written by student
-		return 0.0;
+		
+		return (2*(this.length))+ (2*(this.width));
 	}
 
 
 	public String toString() {
-		return "Rectangle Width: " + width + " Length: " + length + " Area: " + this.calculateArea() + " Perimeter: "
-				+ this.calculatePerimeter();
+		return "Rectangle Width: " + width + "\nLength: " + length + "\nArea: " + this.calculateArea() + "\nPerimeter: "
+				+ this.calculatePerimeter() + "\n\n";
 	}
 }
