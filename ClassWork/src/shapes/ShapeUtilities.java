@@ -35,9 +35,12 @@ public class ShapeUtilities {
 	 * @return double
 	 */
 	public static double sumArea(Shape[] shapes) {
-		// To be written by student
+		int x = 0;
 		double totalArea = 0.0;
-		//need a for loop? or a way to add the stuff in the arrays
+		for (x = 0; x <= shapes.length-1; x++)
+		{
+			totalArea = totalArea + shapes[x].calculateArea();
+		}
 		return totalArea ;
 	}
 
@@ -48,8 +51,14 @@ public class ShapeUtilities {
 	 * @return double
 	 */
 	public static double sumPerimeter(Shape[] shapes) {
-		// To be written by student
-		return 0.0;
+		int y = 0;
+		double totalPerimeter = 0.0;
+		for (y = 0; y <= shapes.length-1; y++)
+		{
+			totalPerimeter = totalPerimeter + shapes[y].calculatePerimeter();
+		}
+		
+		return totalPerimeter;
 	}
 
 }
