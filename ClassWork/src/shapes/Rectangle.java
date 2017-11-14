@@ -12,13 +12,13 @@ public class Rectangle implements Shape {
 
 
 	public double calculateArea() {
-		// To be written by student
+
 		return (this.length)*(this.width);
 	}
 
 
 	public double calculatePerimeter() {
-		// To be written by student
+
 		
 		return (2*(this.length))+ (2*(this.width));
 	}

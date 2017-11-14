@@ -8,7 +8,8 @@ package shapes;
  *         own Shape classes.
  * 
  *         Choose one of the following: Triangle, Pentagon, Hexagon, Heptagon,
- *         etc. Choose one of the following: Rhombus, Trapezoid, Parallelogram,
+ *         etc. 
+ *         Choose one of the following: Rhombus, Trapezoid, Parallelogram,
  *         Kite
  * 
  *         Both classes must implement shape, and implement all necessary methods.
@@ -20,8 +21,9 @@ public class Runner {
 		Shape rectangle1 = new Rectangle(10, 4);
 		Shape square1 = new Square(10);
 		Shape triangle1 = new Triangle(2,2,2);
+		Shape parallelogram1 = new Parallelogram(10,10,10);
 
-		Shape[] shapeArr = { circle1, rectangle1, square1, triangle1 };
+		Shape[] shapeArr = { circle1, rectangle1, square1, triangle1, parallelogram1 };
 
 		for (Shape shape : shapeArr) {
 			System.out.println(shape);

@@ -1,12 +1,12 @@
 package shapes;
 
-public class Triangle implements Shape {
+public class Parallelogram implements Shape {
 	
 	private int base;
 	private int height;
 	private int side;
 
-	public Triangle(int height, int base, int side) {
+	public Parallelogram(int height, int base, int side) {
 		this.height = height;
 		this.base = base;
 		this.side = side;
@@ -16,19 +16,19 @@ public class Triangle implements Shape {
 	public double calculateArea() {
 
 		
-		return ((0.5*(this.base))*(this.height));
+		return (this.base)*(this.height);
 	}
 
 
 	public double calculatePerimeter() {
 
 		
-		return (3*(this.side));
+		return ((2*(this.side))+(2*(this.base)));
 	}
 
 
 	public String toString() {
-		return "Triangle Base: " + base + "\nHeight: " + height + "\nSide: " + side + "\nArea: " + this.calculateArea() + "\nPerimeter: "
+		return "Parallelogram Base: " + base + "\nHeight: " + height + "\nSide: " + side + "\nArea: " + this.calculateArea() + "\nPerimeter: "
 				+ this.calculatePerimeter() + "\n\n";
 	}
 }
