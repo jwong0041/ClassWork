@@ -1,6 +1,7 @@
 package shapes;
 
-public interface Shape {
+public interface Shape 
+{
 
 	public abstract double calculateArea();
 

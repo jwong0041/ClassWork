@@ -2,18 +2,22 @@ package shapes;
 
 import java.util.Random;
 
-public class ShapeUtilities {
+public class ShapeUtilities 
+{
 
 	/**
 	 * Creates a random shape from the choices.
 	 * 
 	 * @return Shape Student Work: Update with your own shape.
 	 */
-	public static Shape randomShape() {
+	public static Shape randomShape() 
+	{
 		Random rand = new Random();
 		int x = rand.nextInt(3);
 
-		switch (x) {
+		switch (x) 
+		{
+		
 		case 0:
 			return new Circle(rand.nextInt(100));
 		case 1:
@@ -26,6 +30,7 @@ public class ShapeUtilities {
 			return new Parallelogram(rand.nextInt(25), rand.nextInt(50), rand.nextInt(25));
 		default:
 			return new Circle(rand.nextInt(100));
+			
 		}
 
 	}
@@ -36,12 +41,13 @@ public class ShapeUtilities {
 	 * @param shapes
 	 * @return double
 	 */
-	public static double sumArea(Shape[] shapes) {
+	public static double sumArea(Shape[] shapes) 
+	{
 		int x = 0;
 		double totalArea = 0.0;
 		for (x = 0; x <= shapes.length-1; x++)
-		{
-			totalArea = totalArea + shapes[x].calculateArea();
+		{	
+			totalArea = totalArea + shapes[x].calculateArea();	
 		}
 		return totalArea ;
 	}
@@ -52,7 +58,8 @@ public class ShapeUtilities {
 	 * @param shapes
 	 * @return double
 	 */
-	public static double sumPerimeter(Shape[] shapes) {
+	public static double sumPerimeter(Shape[] shapes) 
+	{
 		int y = 0;
 		double totalPerimeter = 0.0;
 		for (y = 0; y <= shapes.length-1; y++)
