@@ -13,33 +13,26 @@ public class Circle implements Shape
 	 */
 	public Circle(int radius) 
 	{
-		
 		this.radius = radius;
-
 	}
 
 	@Override
 	public double calculateArea() 
 	{
-
 		return (pi)*(this.radius)*(this.radius);
-		
 	}
 
 	@Override
 	public double calculatePerimeter() 
 	{
-
 		return (pi)*(2*(this.radius));
-		
 	}
 
 	@Override
 	public String toString() 
 	{
-	
 		return "Circle Radius: " + radius + "\nArea: " + this.calculateArea() + "\nPerimeter: "
 				+ this.calculatePerimeter() + "\n\n";
-		
 	}
+	
 }

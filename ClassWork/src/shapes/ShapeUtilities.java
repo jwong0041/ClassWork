@@ -17,7 +17,6 @@ public class ShapeUtilities
 
 		switch (x) 
 		{
-		
 		case 0:
 			return new Circle(rand.nextInt(100));
 		case 1:
@@ -30,9 +29,7 @@ public class ShapeUtilities
 			return new Parallelogram(rand.nextInt(25), rand.nextInt(50), rand.nextInt(25));
 		default:
 			return new Circle(rand.nextInt(100));
-			
 		}
-
 	}
 
 	/**
@@ -66,8 +63,7 @@ public class ShapeUtilities
 		{
 			totalPerimeter = totalPerimeter + shapes[y].calculatePerimeter();
 		}
-		
 		return totalPerimeter;
 	}
-
+	
 }
