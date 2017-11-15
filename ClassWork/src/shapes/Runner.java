@@ -41,6 +41,7 @@ public class Runner {
 		shapeArr = new Shape[10];
 
 		// Why are we using a for loop instead of a for-each loop here?
+			// For-each loop reads the array, but doesn't allow you to add or save more.
 		for (int i = 0; i < shapeArr.length; i++) 
 			{
 			shapeArr[i] = ShapeUtilities.randomShape();
