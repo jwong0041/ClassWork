@@ -2,7 +2,8 @@ package shapes;
 
 public class Parallelogram implements Shape 
 {
-	
+	//wanted to extend triangle because they had the same fields, but???? 2hard4me
+	//should've made the others extend from this, but they had different fields??
 	private int base;
 	private int height;
 	private int side;

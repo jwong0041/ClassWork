@@ -27,7 +27,7 @@ public class ShapeUtilities
 			return new Triangle(rand.nextInt(33), rand.nextInt(34), rand.nextInt(33));
 		case 4:
 			return new Parallelogram(rand.nextInt(25), rand.nextInt(50), rand.nextInt(25));
-		default:
+		default: // what is default?
 			return new Circle(rand.nextInt(100));
 		}
 	}
@@ -42,7 +42,7 @@ public class ShapeUtilities
 	{
 		int x = 0;
 		double totalArea = 0.0;
-		for (x = 0; x <= shapes.length-1; x++)
+		for (x = 0; x <= shapes.length-1; x++) //forgot to add the -1 and it didn't work the first time
 		{	
 			totalArea = totalArea + shapes[x].calculateArea();	
 		}
